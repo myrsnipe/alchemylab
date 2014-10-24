@@ -33,8 +33,6 @@ public class GameController extends InputAdapter {
             return true;
         }
 
-        Gdx.app.log("keydown", "" + keycode + " : " + direction);
-
         return false;
     }
 
@@ -55,8 +53,6 @@ public class GameController extends InputAdapter {
             direction = Direction.STILL;
             return true;
         }
-
-        Gdx.app.log("keyup", "" + keycode + " : " + direction);
 
         return false;
     }

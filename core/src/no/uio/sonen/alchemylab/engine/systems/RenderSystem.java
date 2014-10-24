@@ -77,8 +77,6 @@ public class RenderSystem extends IteratingSystem implements Disposable {
 
         batch.end();
         renderQueue.clear();
-
-        Gdx.app.log("camera", "" + camera.position);
     }
 
     @Override

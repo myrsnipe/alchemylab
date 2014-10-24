@@ -24,20 +24,14 @@ public class CameraSystem extends EntitySystem {
 
     @Override
     public void update(float deltaTime) {
-        Gdx.app.log("CameraSystem", "" + controller.direction);
-
         if (controller.direction == Direction.UP) {
             camera.position.add(0 , movementSpeed * deltaTime, 0);
-            Gdx.app.log("CameraSystem", "1");
         } else if (controller.direction == Direction.DOWN) {
             camera.position.add(0 , -movementSpeed * deltaTime, 0);
-            Gdx.app.log("CameraSystem", "2");
         } else if (controller.direction == Direction.LEFT) {
             camera.position.add(-movementSpeed * deltaTime, 0, 0);
-            Gdx.app.log("CameraSystem", "3");
         } else if (controller.direction == Direction.RIGHT) {
             camera.position.add(movementSpeed * deltaTime, 0, 0);
-            Gdx.app.log("CameraSystem", "4");
         }
     }
 }
