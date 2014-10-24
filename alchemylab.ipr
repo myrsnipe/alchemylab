@@ -1,81 +1,542 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactManager">
+    <artifact type="war" name="Gradle : alchemylab:html : html-draft-1.0.war">
+      <output-path>$PROJECT_DIR$/out/artifacts/html</output-path>
+      <root id="archive" name="html-draft-1.0.war">
+        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-draft-1.0.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="html" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="archive" name="alchemylab-core-1.0.jar">
+              <element id="module-output" name="core" />
+            </element>
+            <element id="library" level="project" name="gdx-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1" />
+            <element id="library" level="project" name="ashley-1.1.0" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="ashley-1.1.0-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA" />
+            <element id="library" level="project" name="json-20090211" />
+            <element id="library" level="project" name="gwt-user-2.6.0" />
+            <element id="library" level="project" name="gwt-servlet-2.6.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Gradle : alchemylab:html : html-draft-1.0.war (exploded)">
+      <output-path>$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-draft-1.0.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="html" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="archive" name="alchemylab-core-1.0.jar">
+              <element id="module-output" name="core" />
+            </element>
+            <element id="library" level="project" name="gdx-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1" />
+            <element id="library" level="project" name="ashley-1.1.0" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="ashley-1.1.0-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA" />
+            <element id="library" level="project" name="json-20090211" />
+            <element id="library" level="project" name="gwt-user-2.6.0" />
+            <element id="library" level="project" name="gwt-servlet-2.6.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Gradle : alchemylab:html : html-1.0.war">
+      <output-path>$PROJECT_DIR$/out/artifacts/html</output-path>
+      <root id="archive" name="html-1.0.war">
+        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-1.0.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="html" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="archive" name="alchemylab-core-1.0.jar">
+              <element id="module-output" name="core" />
+            </element>
+            <element id="library" level="project" name="gdx-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1" />
+            <element id="library" level="project" name="ashley-1.1.0" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="ashley-1.1.0-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA" />
+            <element id="library" level="project" name="json-20090211" />
+            <element id="library" level="project" name="gwt-user-2.6.0" />
+            <element id="library" level="project" name="gwt-servlet-2.6.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Gradle : alchemylab:html : html-1.0.war (exploded)">
+      <output-path>$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-1.0.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="html" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="archive" name="alchemylab-core-1.0.jar">
+              <element id="module-output" name="core" />
+            </element>
+            <element id="library" level="project" name="gdx-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1" />
+            <element id="library" level="project" name="ashley-1.1.0" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-backend-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-1.3.1-sources" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1" />
+            <element id="library" level="project" name="gdx-controllers-gwt-1.3.1-sources" />
+            <element id="library" level="project" name="ashley-1.1.0-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA-sources" />
+            <element id="library" level="project" name="validation-api-1.0.0.GA" />
+            <element id="library" level="project" name="json-20090211" />
+            <element id="library" level="project" name="gwt-user-2.6.0" />
+            <element id="library" level="project" name="gwt-servlet-2.6.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+  </component>
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac"/>
+    <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions>
-      <entry name=".+\.(properties|xml|html|dtd|tld)"/>
-      <entry name=".+\.(gif|png|jpeg|jpg)"/>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
     </resourceExtensions>
     <wildcardResourcePatterns>
-      <entry name="!?*.java"/>
-      <entry name="!?*.groovy"/>
+      <entry name="!?*.java" />
+      <entry name="!?*.groovy" />
     </wildcardResourcePatterns>
-    <annotationProcessing enabled="false" useClasspath="true"/>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright/>
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DependencyValidationManager">
-    <option name="SKIP_IMPORT_STATEMENTS" value="false"/>
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false"/>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/desktop" />
+            <option value="$PROJECT_DIR$/html" />
+            <option value="$PROJECT_DIR$/ios" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
   <component name="GradleUISettings">
-    <setting name="root"/>
+    <setting name="root" />
   </component>
   <component name="GradleUISettings2">
-    <setting name="root"/>
+    <setting name="root" />
   </component>
-  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C"/>
+  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C" />
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY"/>
-    <option name="OPTION_SCOPE" value="protected"/>
-    <option name="OPTION_HIERARCHY" value="true"/>
-    <option name="OPTION_NAVIGATOR" value="true"/>
-    <option name="OPTION_INDEX" value="true"/>
-    <option name="OPTION_SEPARATE_INDEX" value="true"/>
-    <option name="OPTION_DOCUMENT_TAG_USE" value="false"/>
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false"/>
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false"/>
-    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true"/>
-    <option name="OPTION_DEPRECATED_LIST" value="true"/>
-    <option name="OTHER_OPTIONS" value=""/>
-    <option name="HEAP_SIZE"/>
-    <option name="LOCALE"/>
-    <option name="OPEN_IN_BROWSER" value="true"/>
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml"/>
-      <module fileurl="file://$PROJECT_DIR$/alchemylab.iml" filepath="$PROJECT_DIR$/alchemylab.iml"/>
-      <module fileurl="file://$PROJECT_DIR$/ios/ios.iml" filepath="$PROJECT_DIR$/ios/ios.iml"/>
-      <module fileurl="file://$PROJECT_DIR$/desktop/desktop.iml" filepath="$PROJECT_DIR$/desktop/desktop.iml"/>
-      <module fileurl="file://$PROJECT_DIR$/html/html.iml" filepath="$PROJECT_DIR$/html/html.iml"/>
-      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml"/>
+      <module fileurl="file://$PROJECT_DIR$/alchemylab.iml" filepath="$PROJECT_DIR$/alchemylab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desktop/desktop.iml" filepath="$PROJECT_DIR$/desktop/desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html/html.iml" filepath="$PROJECT_DIR$/html/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ios/ios.iml" filepath="$PROJECT_DIR$/ios/ios.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-type="JavaSDK" assert-jdk-15="true" project-jdk-name="1.8">
-    <output url="file://$PROJECT_DIR$/out"/>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
-    <option name="mySupportsUserInfoFilter" value="true"/>
+    <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs=""/>
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="ashley-1.1.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.1.0/82bac8cad6de9e81bf3ebee1006f36ef0417e1b7/ashley-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.1.0/bd3e8e7b0c4c0eb99dfe03cf4c400b642f021847/ashley-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="ashley-1.1.0-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.1.0/bd3e8e7b0c4c0eb99dfe03cf4c400b642f021847/ashley-1.1.0-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.3.1/18995f8b7b19118975722370818023c76a86fdf4/gdx-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.3.1/58319f183d9088a80c2f2ba9009f5aaa2ce08714/gdx-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-1.3.1-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.3.1/58319f183d9088a80c2f2ba9009f5aaa2ce08714/gdx-1.3.1-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-backend-gwt-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.3.1/212cb78c7b9c66add829846e28da9dcb3d874714/gdx-backend-gwt-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.3.1/36a97985277b94a19b9c471aa6debe6257b533f2/gdx-backend-gwt-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-backend-gwt-1.3.1-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.3.1/36a97985277b94a19b9c471aa6debe6257b533f2/gdx-backend-gwt-1.3.1-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-backend-lwjgl-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.3.1/8df8aa24811d137e88658508fba4c7bb6f27c8c9/gdx-backend-lwjgl-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.3.1/d63a5677e35ae2070f4bdea6f4ed9651557a7401/gdx-backend-lwjgl-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-backend-robovm-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.3.1/a07f24ff2e981bf627ded7e24cab81be4a3f18ac/gdx-backend-robovm-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.3.1/9561e5ca673d31f28db496f0cbd79eb1998c5f9d/gdx-backend-robovm-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-controllers-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.3.1/b6257423d255dc8fecfc38bd578dfb5ba1bf22bc/gdx-controllers-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.3.1/e65ad5e4e5ebb2a36fae001bf92994cc9d87f8a8/gdx-controllers-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-controllers-1.3.1-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.3.1/e65ad5e4e5ebb2a36fae001bf92994cc9d87f8a8/gdx-controllers-1.3.1-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-controllers-desktop-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-desktop/1.3.1/9485e5ad3740c8a44d9a600662dcbfdb6fa13c80/gdx-controllers-desktop-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-desktop/1.3.1/132226baaa9ffbec987f8432e7241583a2c699c4/gdx-controllers-desktop-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-controllers-gwt-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-gwt/1.3.1/4e5493a0e70c1e02f8bff5d481050923f5fbb8b9/gdx-controllers-gwt-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-gwt/1.3.1/ec298b13b64cc53db9fe348d68041553c588cfad/gdx-controllers-gwt-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-controllers-gwt-1.3.1-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-gwt/1.3.1/ec298b13b64cc53db9fe348d68041553c588cfad/gdx-controllers-gwt-1.3.1-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-controllers-platform-1.3.1-natives-desktop">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-platform/1.3.1/a1645f0dfb448fdfb181faa1b2bddac14ad2fd3d/gdx-controllers-platform-1.3.1-natives-desktop.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-platform-1.3.1-natives-desktop">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.3.1/88596abf3fdd2ea4662e67d59c3c05b07b0d859b/gdx-platform-1.3.1-natives-desktop.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="gdx-tools-1.3.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.3.1/a1d2a112518ba3a8a73be9e2a6dc507be1c9a537/gdx-tools-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.3.1/11bc2685fa78984371f2e8d53a1075f275d7f497/gdx-tools-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gwt-servlet-2.6.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/7a59cc91e16f255d22b692dcc5839d3eb1d606c6/gwt-servlet-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gwt-user-2.6.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.0/8237d1bd37127188107388c8724be44a0e9f73ca/gwt-user-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.0/7a59cc91e16f255d22b692dcc5839d3eb1d606c6/gwt-user-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="jinput-2.0.5">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/82604cfeb87b9ab70ed70aa19a137de8ceb21504/jinput-2.0.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="jinput-platform-2.0.5-natives-linux">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="jinput-platform-2.0.5-natives-osx">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="jinput-platform-2.0.5-natives-windows">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="jlayer-1.0.1-gdx">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.jlayer/jlayer/1.0.1-gdx/7cca83cec5c1b2f011362f4d85aabd71a73b049d/jlayer-1.0.1-gdx.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.jlayer/jlayer/1.0.1-gdx/f1c4ffebc5e4f68be914404faab580c20de8ea1f/jlayer-1.0.1-gdx-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="jorbis-0.0.17">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jcraft/jorbis/0.0.17/8872d22b293e8f5d7d56ff92be966e6dc28ebdc6/jorbis-0.0.17.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jcraft/jorbis/0.0.17/5446be5d62e4c6b347c8e6cd28dc00a936417ba2/jorbis-0.0.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="json-20090211">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="jutils-1.0.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/d18678a00b216863206a1bb6190507e02a32971b/jutils-1.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="lwjgl-2.9.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/f58c5aabcef0e41718a564be9f8e412fff8db847/lwjgl-2.9.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/ccedb5b6f96913c6f78bc10249e747ded90baa51/lwjgl-2.9.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="lwjgl-platform-2.9.1-natives-linux">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/aa9aae879af8eb378e22cfc64db56ec2ca9a44d1/lwjgl-platform-2.9.1-natives-linux.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lwjgl-platform-2.9.1-natives-osx">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/2d12c83fdfbc04ecabf02c7bc8cc54d034f0daac/lwjgl-platform-2.9.1-natives-osx.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lwjgl-platform-2.9.1-natives-windows">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/4c517eca808522457dd95ee8fc1fbcdbb602efbe/lwjgl-platform-2.9.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lwjgl_util-2.9.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.1/290d7ba8a1bd9566f5ddf16ad06f09af5ec9b20e/lwjgl_util-2.9.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.1/9f350d8a760247f2ae88e996b55f8f7121346c79/lwjgl_util-2.9.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="robovm-cocoatouch-0.0.14">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-cocoatouch/0.0.14/6d20cc1141c38d06da31602363061555b6cb2980/robovm-cocoatouch-0.0.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-cocoatouch/0.0.14/6f10d40d8baea7379b21f728b4bc3a7eacb1f311/robovm-cocoatouch-0.0.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="robovm-objc-0.0.14">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-objc/0.0.14/385e5843270c5bf075003a218b9c58c3a734f9bb/robovm-objc-0.0.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-objc/0.0.14/43bbb96e0539c635f6993727256044aee0e0c894/robovm-objc-0.0.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="robovm-rt-0.0.14">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-rt/0.0.14/fabfaf0fb756e10bab9db607e18c914986915273/robovm-rt-0.0.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-rt/0.0.14/6935daa34fa3ff4274bb02734c0f45b6aebbc88d/robovm-rt-0.0.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="validation-api-1.0.0.GA">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="validation-api-1.0.0.GA-sources">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl/>
+            <SplitterProportionsDataImpl />
           </splitter-proportions>
-          <settings/>
+          <settings />
         </UIState>
       </state>
       <state key="Copyright.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl/>
+            <SplitterProportionsDataImpl />
           </splitter-proportions>
         </UIState>
       </state>
@@ -85,7 +546,7 @@
             <SplitterProportionsDataImpl>
               <option name="proportions">
                 <list>
-                  <option value="0.2"/>
+                  <option value="0.2" />
                 </list>
               </option>
             </SplitterProportionsDataImpl>
@@ -96,11 +557,12 @@
       <state key="ScopeChooserConfigurable.UI">
         <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl/>
+            <SplitterProportionsDataImpl />
           </splitter-proportions>
-          <settings/>
+          <settings />
         </UIState>
       </state>
     </states>
   </component>
 </project>
+

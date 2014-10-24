@@ -1,70 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module relativePaths="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output/>
-    <orderEntry type="inheritedJdk"/>
-    <content url="file://$MODULE_DIR$/">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false"/>
-      <excludeFolder url="file://$MODULE_DIR$/build"/>
-      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
-    </content>
-    <orderEntry type="sourceFolder" forTests="false"/>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-rt/0.0.14/fabfaf0fb756e10bab9db607e18c914986915273/robovm-rt-0.0.14.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-rt/0.0.14/6935daa34fa3ff4274bb02734c0f45b6aebbc88d/robovm-rt-0.0.14-sources.jar!/"/>
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-cocoatouch/0.0.14/6d20cc1141c38d06da31602363061555b6cb2980/robovm-cocoatouch-0.0.14.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-cocoatouch/0.0.14/6f10d40d8baea7379b21f728b4bc3a7eacb1f311/robovm-cocoatouch-0.0.14-sources.jar!/"/>
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.3.1/a07f24ff2e981bf627ded7e24cab81be4a3f18ac/gdx-backend-robovm-1.3.1.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.3.1/9561e5ca673d31f28db496f0cbd79eb1998c5f9d/gdx-backend-robovm-1.3.1-sources.jar!/"/>
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-objc/0.0.14/385e5843270c5bf075003a218b9c58c3a734f9bb/robovm-objc-0.0.14.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/org.robovm/robovm-objc/0.0.14/43bbb96e0539c635f6993727256044aee0e0c894/robovm-objc-0.0.14-sources.jar!/"/>
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.3.1/18995f8b7b19118975722370818023c76a86fdf4/gdx-1.3.1.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES>
-          <root url="jar:///Users/steffennilsen/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.3.1/58319f183d9088a80c2f2ba9009f5aaa2ce08714/gdx-1.3.1-sources.jar!/"/>
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="core" exported=""/>
+<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="alchemylab" external.system.module.version="1.0" relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":ios" />
+      </configuration>
+    </facet>
   </component>
-  <component name="ModuleRootManager"/>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="core" exported="" />
+    <orderEntry type="library" exported="" name="robovm-rt-0.0.14" level="project" />
+    <orderEntry type="library" exported="" name="robovm-cocoatouch-0.0.14" level="project" />
+    <orderEntry type="library" exported="" name="gdx-backend-robovm-1.3.1" level="project" />
+    <orderEntry type="library" exported="" name="robovm-objc-0.0.14" level="project" />
+    <orderEntry type="library" exported="" name="gdx-1.3.1" level="project" />
+  </component>
 </module>
+

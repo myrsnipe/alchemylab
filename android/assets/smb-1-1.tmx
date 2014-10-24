@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="256" height="16" tilewidth="16" tileheight="16" backgroundcolor="#6b8cff">
+ <tileset firstgid="1" name="NES - Super Mario Bros - Tile Set" tilewidth="16" tileheight="16">
+  <image source="NES - Super Mario Bros - Tile Set.png" width="528" height="448"/>
+  <tile id="0">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="type" value="questionbox"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="256" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt1MENgkAUBNCFDtROVLQQQ2liJ2J5/ANEDorBEDeG95I57W6yl5mUAAAA5ruWKTWRW5n7J8Cv3aP3beTxpv/DPjR2AlZn2If2w04AAAAAAADL2Ba5fwDkcInu7yP1lxtgO+A/bfruHyLHyG6iy1WcnUY5F8/3r95Vo3sAAEB+HRPLDl8=
+  </data>
+ </layer>
+ <layer name="z1" width="256" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEKgDAMQNHETW/gFfT+99OCg4h0EiL0PSiBTlk+JAIAAAAAAACgb61eAAAA+Nzzzp+uv/sEaOaMWLJ6C6DCdra/6x+GpH/4jxzgAe+q29Q/1DkAho4BoA==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object name="player-spawn" x="96" y="192" width="16" height="32"/>
+ </objectgroup>
+ <objectgroup name="collisionlayer">
+  <object name="ground1" x="0" y="224" width="912" height="32"/>
+ </objectgroup>
+</map>
