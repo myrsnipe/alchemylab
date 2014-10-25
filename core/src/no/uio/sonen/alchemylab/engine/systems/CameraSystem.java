@@ -1,7 +1,6 @@
 package no.uio.sonen.alchemylab.engine.systems;
 
 import com.badlogic.ashley.core.EntitySystem;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import no.uio.sonen.alchemylab.GameController;
 
@@ -24,13 +23,15 @@ public class CameraSystem extends EntitySystem {
 
     @Override
     public void update(float deltaTime) {
-        if (controller.direction == Direction.UP) {
-            camera.position.add(0 , movementSpeed * deltaTime, 0);
-        } else if (controller.direction == Direction.DOWN) {
-            camera.position.add(0 , -movementSpeed * deltaTime, 0);
-        } else if (controller.direction == Direction.LEFT) {
+        if (controller.camY == Direction.UP) {
+            camera.position.add(0, movementSpeed * deltaTime, 0);
+        } else if (controller.camY == Direction.DOWN) {
+            camera.position.add(0, -movementSpeed * deltaTime, 0);
+        }
+
+        if (controller.camX == Direction.LEFT) {
             camera.position.add(-movementSpeed * deltaTime, 0, 0);
-        } else if (controller.direction == Direction.RIGHT) {
+        } else if (controller.camX == Direction.RIGHT) {
             camera.position.add(movementSpeed * deltaTime, 0, 0);
         }
     }

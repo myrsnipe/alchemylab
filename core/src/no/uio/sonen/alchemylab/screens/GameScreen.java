@@ -35,7 +35,6 @@ public class GameScreen extends ScreenAdapter {
 
         camera = new OrthographicCamera();
         camera.setToOrtho(false, AlchemyLab.VIEWPORT_WIDTH, AlchemyLab.VIEWPORT_HEIGHT);
-        camera.position.set(Vector3.Zero);
 
         CameraSystem cameraSystem = new CameraSystem(camera, controller, 0);
 

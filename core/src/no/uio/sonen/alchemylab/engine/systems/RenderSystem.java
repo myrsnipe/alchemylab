@@ -5,7 +5,6 @@ import com.badlogic.ashley.core.ComponentType;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -96,5 +95,6 @@ public class RenderSystem extends IteratingSystem implements Disposable {
 
         tiledMapRenderer = new OrthoCachedTiledMapRenderer(map);
         tiledMapRenderer.setView(camera);
+        tiledMapRenderer.setBlending(true);
     }
 }
