@@ -1,0 +1,132 @@
+
+sprites.png
+size: 232,52
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gomba
+  rotate: false
+  xy: 36, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 0
+gomba
+  rotate: false
+  xy: 162, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 1
+gomba
+  rotate: false
+  xy: 54, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 2
+mario
+  rotate: false
+  xy: 2, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 0
+mario
+  rotate: false
+  xy: 20, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 1
+mario
+  rotate: false
+  xy: 38, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 2
+mario
+  rotate: false
+  xy: 56, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 3
+mario
+  rotate: false
+  xy: 74, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 4
+mario
+  rotate: false
+  xy: 92, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 5
+mario
+  rotate: false
+  xy: 110, 20
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: 6
+mario-small
+  rotate: false
+  xy: 180, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 0
+mushroom-red
+  rotate: false
+  xy: 72, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+pipe-vertical
+  rotate: false
+  xy: 2, 2
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+pipe-vertical-opening
+  rotate: false
+  xy: 128, 36
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 198, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 0
+star
+  rotate: false
+  xy: 90, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 1
+star
+  rotate: false
+  xy: 216, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 2
+star
+  rotate: false
+  xy: 108, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 3

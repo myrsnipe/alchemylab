@@ -1,15 +1,14 @@
 package no.uio.sonen.alchemylab.engine.components;
 
 import com.badlogic.ashley.core.Component;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.utils.Pool.Poolable;
+import no.uio.sonen.alchemylab.JumpState;
 
-public class CameraComponent extends Component implements Poolable {
-
-    public OrthographicCamera camera;
+public class StateComponent extends Component implements Poolable {
+    public JumpState jump = JumpState.STILL;
 
     @Override
     public void reset() {
-        camera = null;
+        jump = JumpState.STILL;
     }
 }

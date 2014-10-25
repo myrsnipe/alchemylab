@@ -17,6 +17,8 @@ public class AlchemyLab extends Game {
 //    public static final float VIEWPORT_WIDTH = 512;
     public static final float VIEWPORT_HEIGHT = 256;
     public static final float VIEWPORT_WIDTH = 240;
+//    public static final float VIEWPORT_HEIGHT = 160;
+//    public static final float VIEWPORT_WIDTH = 144;
 
 	public SpriteBatch batch;
 	

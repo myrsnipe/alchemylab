@@ -71,7 +71,7 @@ public class RenderSystem extends IteratingSystem implements Disposable {
             TextureComponent tex = texm.get(entity);
             TransformComponent t = posm.get(entity);
 
-            batch.draw(tex.region, t.pos.x, t.pos.y);
+            batch.draw(tex.region, t.curPos.x, t.curPos.y);
         }
 
         batch.end();
