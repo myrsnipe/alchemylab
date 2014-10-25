@@ -7,11 +7,11 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Disposable;
-import no.uio.sonen.alchemylab.engine.components.CameraComponent;
+import no.uio.sonen.alchemylab.engine.components.*;
 import no.uio.sonen.alchemylab.engine.systems.RenderSystem;
 
 public class GameWorld implements Disposable {
-    public static final Vector2 gravity = new Vector2(0, -256);
+    public static final Vector2 gravity = new Vector2(0, -32);
 
     private final PooledEngine engine;
     private final OrthographicCamera camera;
@@ -29,20 +29,31 @@ public class GameWorld implements Disposable {
 
     private void testWorld() {
         loadMap(WorldMaps.WORLD1);
-        spawnCamera();
+        spawnPlayer(64, 32);
     }
 
-    private void spawnCamera() {
-        Entity entity = new Entity();
+    private void spawnPlayer(float x, float y) {
+        Entity entity = engine.createEntity();
 
-        CameraComponent cameraComponent = new CameraComponent();
+        BoundsComponent boundsComponent = new BoundsComponent();
+        MovementComponent movementComponent = new MovementComponent();
+        TransformComponent transformComponent= new TransformComponent();
+        TextureComponent textureComponent = new TextureComponent();
+        PlayerComponent playerComponent = new PlayerComponent();
 
-        cameraComponent.camera = this.camera;
+        boundsComponent.rectangle.setPosition(x, y);
+        transformComponent.pos.set(x, y);
+        textureComponent.region = Assets.mario;
 
-        entity.add(cameraComponent);
+        entity.add(boundsComponent);
+        entity.add(movementComponent);
+        entity.add(transformComponent);
+        entity.add(textureComponent);
+        entity.add(playerComponent);
 
         engine.addEntity(entity);
     }
+
 
     public void loadMap(WorldMaps mapFile) {
         if (this.map != null) {
