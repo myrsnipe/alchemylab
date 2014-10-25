@@ -28,6 +28,6 @@ public class GravitySystem extends IteratingSystem {
     @Override
     public void processEntity(Entity entity, float deltaTime) {
         MovementComponent mov = mm.get(entity);
-        mov.velocity.add(GameWorld.gravity.x * deltaTime, GameWorld.gravity.y * deltaTime);
+        mov.velocity.add(0, GameWorld.gravity.y * deltaTime);
     }
 }

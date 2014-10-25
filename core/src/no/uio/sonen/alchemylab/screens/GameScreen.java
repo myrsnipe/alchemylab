@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import no.uio.sonen.alchemylab.AlchemyLab;
 import no.uio.sonen.alchemylab.GameWorld;
+import no.uio.sonen.alchemylab.SpatialHashGrid;
 import no.uio.sonen.alchemylab.controller.CameraController;
 import no.uio.sonen.alchemylab.controller.GameController;
 import no.uio.sonen.alchemylab.controller.PlayerController;
@@ -33,6 +34,7 @@ public class GameScreen extends ScreenAdapter {
         playerController = new PlayerController();
         cameraController = new CameraController();
         controller = new GameController(playerController, cameraController);
+
         Gdx.input.setInputProcessor(controller);
 
         engine = new PooledEngine();
@@ -44,13 +46,17 @@ public class GameScreen extends ScreenAdapter {
         CameraSystem cameraSystem = new CameraSystem(camera, cameraController, 1);
         MovementSystem movementSystem = new MovementSystem(2);
         GravitySystem gravitySystem = new GravitySystem(3);
-        RenderSystem renderSystem = new RenderSystem(batch, camera, 4);
-        DebugRenderSystem debugRenderSystem = new DebugRenderSystem(batch, camera, 5);
+        CollisionSystem collisionSystem = new CollisionSystem(4);
+        PositionSystem positionSystem= new PositionSystem(5);
+        RenderSystem renderSystem = new RenderSystem(batch, camera, 6);
+        DebugRenderSystem debugRenderSystem = new DebugRenderSystem(batch, camera, 7);
 
         engine.addSystem(playerSystem);
         engine.addSystem(cameraSystem);
         engine.addSystem(movementSystem);
         engine.addSystem(gravitySystem);
+        engine.addSystem(collisionSystem);
+        engine.addSystem(positionSystem);
         engine.addSystem(renderSystem);
         engine.addSystem(debugRenderSystem);
 
