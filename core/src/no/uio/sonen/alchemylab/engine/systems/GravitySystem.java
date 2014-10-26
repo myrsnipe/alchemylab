@@ -8,11 +8,12 @@ import com.badlogic.ashley.systems.IteratingSystem;
 import com.badlogic.gdx.utils.Bits;
 import no.uio.sonen.alchemylab.Constants;
 import no.uio.sonen.alchemylab.GameWorld;
+import no.uio.sonen.alchemylab.engine.components.GravityComponent;
 import no.uio.sonen.alchemylab.engine.components.MovementComponent;
 import no.uio.sonen.alchemylab.engine.components.PlayerComponent;
 
 public class GravitySystem extends IteratingSystem {
-    private static final Bits all = ComponentType.getBitsFor(PlayerComponent.class);
+    private static final Bits all = ComponentType.getBitsFor(GravityComponent.class);
     private static final Bits one = ComponentType.getBitsFor();
     private static final Bits exclude = ComponentType.getBitsFor();
     private static final Family family = Family.getFor(all, one, exclude);

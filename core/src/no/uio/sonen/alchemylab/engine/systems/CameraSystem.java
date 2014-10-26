@@ -53,6 +53,10 @@ public class CameraSystem extends IteratingSystem {
             camera.position.set(camera.position.x, Constants.VIEWPORT_HEIGHT / 2, 0);
         }
 
+        if (camera.position.y > Constants.VIEWPORT_HEIGHT / 2) {
+            camera.position.set(camera.position.x, Constants.VIEWPORT_HEIGHT / 2, 0);
+        }
+
         if (camera.position.x < Constants.VIEWPORT_WIDTH / 2) {
             camera.position.set(Constants.VIEWPORT_WIDTH/ 2, camera.position.y, 0);
         }

@@ -3,7 +3,6 @@ package no.uio.sonen.alchemylab;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -28,8 +27,58 @@ public class GameWorld implements Disposable {
     }
 
     private void testWorld() {
-        loadMap(WorldMaps.WORLD1);
+        loadMap(WorldMaps.FLOWERFIELD);
         spawnPlayer(64, 64);
+        spawnMaster(31 * 16, 13 * 16);
+        spawnPotion(128, 32);
+    }
+
+    private void spawnPotion(int x, int y) {
+        Entity entity = engine.createEntity();
+
+        PotionComponent potionComponent = new PotionComponent();
+        MovementComponent movementComponent = new MovementComponent();
+        TransformComponent transformComponent= new TransformComponent(x, y, 0);
+        TextureComponent textureComponent = new TextureComponent();
+
+        textureComponent.region = Assets.potion;
+
+        float width = textureComponent.region.getRegionWidth();
+        float height = textureComponent.region.getRegionHeight();
+
+        BoundsComponent boundsComponent = new BoundsComponent(x, y, width, height);
+
+        entity.add(potionComponent);
+        entity.add(movementComponent);
+        entity.add(boundsComponent);
+        entity.add(transformComponent);
+        entity.add(textureComponent);
+
+        engine.addEntity(entity);
+    }
+
+    private void spawnMaster(float x, float y) {
+        Entity entity = engine.createEntity();
+
+        MovementComponent movementComponent = new MovementComponent();
+        TransformComponent transformComponent= new TransformComponent(x, y, 0);
+        TextureComponent textureComponent = new TextureComponent();
+        StateComponent stateComponent = new StateComponent();
+
+        textureComponent.region = Assets.master;
+
+        float width = textureComponent.region.getRegionWidth();
+        float height = textureComponent.region.getRegionHeight();
+
+        BoundsComponent boundsComponent = new BoundsComponent(x, y, width, height);
+
+        entity.add(boundsComponent);
+        entity.add(movementComponent);
+        entity.add(transformComponent);
+        entity.add(textureComponent);
+        entity.add(stateComponent);
+
+        engine.addEntity(entity);
     }
 
     private void spawnPlayer(float x, float y) {
@@ -40,8 +89,9 @@ public class GameWorld implements Disposable {
         TextureComponent textureComponent = new TextureComponent();
         PlayerComponent playerComponent = new PlayerComponent();
         StateComponent stateComponent = new StateComponent();
+        GravityComponent gravityComponent = new GravityComponent();
 
-        textureComponent.region = Assets.mario;
+        textureComponent.region = Assets.player;
 
         float width = textureComponent.region.getRegionWidth();
         float height = textureComponent.region.getRegionHeight();
@@ -54,6 +104,7 @@ public class GameWorld implements Disposable {
         entity.add(textureComponent);
         entity.add(playerComponent);
         entity.add(stateComponent);
+        entity.add(gravityComponent);
 
         engine.addEntity(entity);
     }

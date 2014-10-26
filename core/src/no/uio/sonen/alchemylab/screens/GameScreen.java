@@ -17,7 +17,7 @@ public class GameScreen extends ScreenAdapter {
     private final Game game;
     private final SpriteBatch batch;
 
-    private final PooledEngine engine;
+    public static PooledEngine engine;
     private final OrthographicCamera camera;
 
     private GameWorld world;

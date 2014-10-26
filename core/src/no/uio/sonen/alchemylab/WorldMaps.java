@@ -1,7 +1,7 @@
 package no.uio.sonen.alchemylab;
 
 public enum WorldMaps {
-    WORLD1("smb-1-1.tmx");
+    FLOWERFIELD("flowerfield.tmx");
 
     private final String filename;
 

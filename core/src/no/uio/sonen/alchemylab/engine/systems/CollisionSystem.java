@@ -9,13 +9,12 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Bits;
+import no.uio.sonen.alchemylab.Assets;
 import no.uio.sonen.alchemylab.Constants;
 import no.uio.sonen.alchemylab.JumpState;
 import no.uio.sonen.alchemylab.SpatialHashGrid;
-import no.uio.sonen.alchemylab.engine.components.BoundsComponent;
-import no.uio.sonen.alchemylab.engine.components.MovementComponent;
-import no.uio.sonen.alchemylab.engine.components.StateComponent;
-import no.uio.sonen.alchemylab.engine.components.TransformComponent;
+import no.uio.sonen.alchemylab.engine.components.*;
+import no.uio.sonen.alchemylab.screens.GameScreen;
 
 public class CollisionSystem extends IteratingSystem {
     private static final Bits all = ComponentType.getBitsFor(BoundsComponent.class, TransformComponent.class, MovementComponent.class);
@@ -34,6 +33,7 @@ public class CollisionSystem extends IteratingSystem {
     private ComponentMapper<MovementComponent> mm;
     private ComponentMapper<TransformComponent> tm;
     private ComponentMapper<StateComponent> sm;
+    private ComponentMapper<PotionComponent> pm;
 
     // tmp stuff
     private BoundsComponent ba;
@@ -53,6 +53,7 @@ public class CollisionSystem extends IteratingSystem {
         bm = ComponentMapper.getFor(BoundsComponent.class);
         mm = ComponentMapper.getFor(MovementComponent.class);
         tm = ComponentMapper.getFor(TransformComponent.class);
+        pm = ComponentMapper.getFor(PotionComponent.class);
         sm = ComponentMapper.getFor(StateComponent.class);
 
         aMin = new Vector2();
@@ -93,16 +94,25 @@ public class CollisionSystem extends IteratingSystem {
             bMax.set(bb.nextBounds.getMax());
 
             MovementComponent mc = mm.get(a);
+            PotionComponent pc = pm.get(b);
 
             if (checkY && ((aMin.x <= bMax.x && aMin.x >= bMin.x) || (aMax.x >= bMin.x && aMax.x <= bMax.x))) {
                 if (mc.velocity.y < 0) {
                     if (aMin.y < bMax.y && aMin.y > bMin.y) {
-                        fixCollisionFloor(a, b);
+                        if (pc != null) {
+                            drinkPotionButterfly(a, b);
+                        } else {
+                            fixCollisionFloor(a, b);
+                        }
                         checkY = false;
                     }
                 } else if (mc.velocity.y > 0) {
                     if (aMax.y > bMin.y && aMax.y < bMax.y) {
-                        fixCollisionCeil(a, b);
+                        if (pc != null) {
+                            drinkPotionButterfly(a, b);
+                        } else {
+                            fixCollisionCeil(a, b);
+                        }
                         checkY = false;
                     }
                 }
@@ -111,12 +121,20 @@ public class CollisionSystem extends IteratingSystem {
             if (checkX && ((aMin.y + 8 <= bMax.y))) {
                 if (mc.velocity.x < 0) {
                     if (aMin.x < bMax.x && aMin.x > bMin.x) {
-                        fixCollisionRightSide(a, b);
+                        if (pc != null) {
+                            drinkPotionButterfly(a, b);
+                        } else {
+                            fixCollisionRightSide(a, b);
+                        }
                         checkX = false;
                     }
                 } else if (mc.velocity.x > 0) {
                     if (aMax.x > bMin.x && aMax.x < bMax.x) {
-                        fixCollisionLeftSide(a, b);
+                        if (pc != null) {
+                            drinkPotionButterfly(a, b);
+                        } else {
+                            fixCollisionLeftSide(a, b);
+                        }
                         checkX = false;
                     }
                 }
@@ -124,6 +142,14 @@ public class CollisionSystem extends IteratingSystem {
 
             Constants.collisions++;
         }
+    }
+
+    private void drinkPotionButterfly(Entity a, Entity b) {
+        Gdx.app.log("potion", "drink");
+        ComponentMapper<TextureComponent> texm = ComponentMapper.getFor(TextureComponent.class);
+        TextureComponent texc = texm.get(a);
+        texc.region.setRegion(Assets.butterfly);
+        GameScreen.engine.removeEntity(b);
     }
 
     private void fixCollisionLeftSide(Entity a, Entity b) {
