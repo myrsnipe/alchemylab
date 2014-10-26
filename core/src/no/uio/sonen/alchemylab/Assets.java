@@ -1,6 +1,8 @@
 package no.uio.sonen.alchemylab;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Disposable;
@@ -18,6 +20,8 @@ public class Assets implements Disposable {
     public static TextureRegion potion;
     public static TextureRegion butterfly;
 
+    public static Music music;
+
 
     public Assets() {
         manager = new AssetManager();
@@ -30,11 +34,14 @@ public class Assets implements Disposable {
         master = new TextureRegion(texture, 4 * 16, 16 * 16, 16, 32);
         potion = new TextureRegion(texture, 0 * 16, 14 * 16, 16, 16);
         butterfly = new TextureRegion(texture, 3 * 16, 18 * 16, 32, 32);
+
+        music = Gdx.audio.newMusic(Gdx.files.internal("bmg.mp3"));
     }
 
     @Override
     public void dispose() {
         manager.dispose();
         texture.dispose();
+        music.dispose();
     }
 }

@@ -31,6 +31,10 @@ public class GameWorld implements Disposable {
         spawnPlayer(64, 64);
         spawnMaster(31 * 16, 13 * 16);
         spawnPotion(128, 32);
+
+        Assets.music.play();
+        Assets.music.setVolume(1.0f);
+        Assets.music.setLooping(true);
     }
 
     private void spawnPotion(int x, int y) {
