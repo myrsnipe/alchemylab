@@ -27,7 +27,7 @@ public class AABB implements Serializable {
         return center;
     }
 
-    private void updateCenter() {
+    public void updateCenter() {
         if (center_dirty) {
             center.set(min).add(max).scl(0.5f);
             center_dirty = false;
@@ -185,8 +185,8 @@ public class AABB implements Serializable {
     }
 
     public AABB setCenter(Vector2 pos) {
-        min.set(pos.x - dimensions.x / 2, pos.y - dimensions.y / 2);
-        max.set(pos.x + dimensions.x / 2, pos.y + dimensions.y / 2);
+        min.set(pos.x - (dimensions.x / 2), pos.y - (dimensions.y / 2));
+        max.set(pos.x + (dimensions.x / 2), pos.y + (dimensions.y / 2));
 
         corners_dirty = true;
         center_dirty = true;

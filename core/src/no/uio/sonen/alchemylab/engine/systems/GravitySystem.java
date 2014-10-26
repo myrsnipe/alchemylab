@@ -6,8 +6,8 @@ import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
 import com.badlogic.gdx.utils.Bits;
+import no.uio.sonen.alchemylab.Constants;
 import no.uio.sonen.alchemylab.GameWorld;
-import no.uio.sonen.alchemylab.engine.components.GravityComponent;
 import no.uio.sonen.alchemylab.engine.components.MovementComponent;
 import no.uio.sonen.alchemylab.engine.components.PlayerComponent;
 
@@ -28,6 +28,6 @@ public class GravitySystem extends IteratingSystem {
     @Override
     public void processEntity(Entity entity, float deltaTime) {
         MovementComponent mov = mm.get(entity);
-        mov.velocity.add(0, GameWorld.gravity.y * deltaTime);
+        mov.velocity.add(0, Constants.gravity * deltaTime);
     }
 }

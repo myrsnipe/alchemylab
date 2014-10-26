@@ -6,28 +6,23 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
-import com.badlogic.gdx.maps.tiled.*;
-import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.utils.Disposable;
 import no.uio.sonen.alchemylab.engine.components.*;
 import no.uio.sonen.alchemylab.engine.systems.CollisionSystem;
 import no.uio.sonen.alchemylab.engine.systems.RenderSystem;
 
 public class GameWorld implements Disposable {
-    public static final int PIXEL_SIZE = 16;
-    public static final Vector2 gravity = new Vector2(0, -32);
-
     private final PooledEngine engine;
-    private final OrthographicCamera camera;
     private final TmxMapLoader mapLoader;
 
     private TiledMap map;
     private SpatialHashGrid spatialHashGrid;
 
-    public GameWorld(PooledEngine engine, OrthographicCamera camera) {
+    public GameWorld(PooledEngine engine) {
         this.engine = engine;
-        this.camera = camera;
-
         mapLoader = new TmxMapLoader();
         testWorld();
     }
@@ -72,14 +67,14 @@ public class GameWorld implements Disposable {
         this.map = mapLoader.load(mapFile.getFilename());
         engine.getSystem(RenderSystem.class).setMap(this.map);
 
-        float mapWidth = Float.parseFloat("" + map.getProperties().get("width")) * PIXEL_SIZE;
-        float mapHeight = Float.parseFloat("" + map.getProperties().get("height")) * PIXEL_SIZE;
+        float mapWidth = Float.parseFloat("" + map.getProperties().get("width")) * Constants.PIXEL_SIZE;
+        float mapHeight = Float.parseFloat("" + map.getProperties().get("height")) * Constants.PIXEL_SIZE;
 
         Gdx.app.log("map", "mapWidth: " + mapWidth);
         Gdx.app.log("map", "mapHeight: " + mapHeight);
 
 
-        spatialHashGrid = new SpatialHashGrid(mapWidth, mapHeight, PIXEL_SIZE);
+        spatialHashGrid = new SpatialHashGrid(mapWidth, mapHeight, Constants.PIXEL_SIZE);
 
         TiledMapTileLayer.Cell cell;
         MapProperties cellProperties;
@@ -97,7 +92,7 @@ public class GameWorld implements Disposable {
                             cellProperties = cell.getTile().getProperties();
 
                             if (cellProperties.containsKey("block")) {
-                                createTileBounds(x * PIXEL_SIZE, y * PIXEL_SIZE);
+                                createTileBounds(x * Constants.PIXEL_SIZE, y * Constants.PIXEL_SIZE);
                             }
                         }
                     }
@@ -111,7 +106,7 @@ public class GameWorld implements Disposable {
     private void createTileBounds(int x, int y) {
         Entity entity = new Entity();
 
-        BoundsComponent boundsComponent = new BoundsComponent(x, y, PIXEL_SIZE, PIXEL_SIZE);
+        BoundsComponent boundsComponent = new BoundsComponent(x, y, Constants.PIXEL_SIZE, Constants.PIXEL_SIZE);
 
         entity.add(boundsComponent);
 

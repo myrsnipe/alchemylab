@@ -53,6 +53,11 @@ public class PlayerController extends InputAdapter {
             return true;
         }
 
+        if (keycode == Input.Keys.SPACE) {
+            jumping = false;
+            return true;
+        }
+
         return false;
     }
 }

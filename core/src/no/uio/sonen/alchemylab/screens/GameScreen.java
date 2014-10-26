@@ -6,9 +6,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import no.uio.sonen.alchemylab.AlchemyLab;
+import no.uio.sonen.alchemylab.Constants;
 import no.uio.sonen.alchemylab.GameWorld;
-import no.uio.sonen.alchemylab.SpatialHashGrid;
 import no.uio.sonen.alchemylab.controller.CameraController;
 import no.uio.sonen.alchemylab.controller.GameController;
 import no.uio.sonen.alchemylab.controller.PlayerController;
@@ -40,7 +39,7 @@ public class GameScreen extends ScreenAdapter {
         engine = new PooledEngine();
 
         camera = new OrthographicCamera();
-        camera.setToOrtho(false, AlchemyLab.VIEWPORT_WIDTH, AlchemyLab.VIEWPORT_HEIGHT);
+        camera.setToOrtho(false, Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT);
 
         PlayerSystem playerSystem = new PlayerSystem(playerController, 0);
         CameraSystem cameraSystem = new CameraSystem(camera, cameraController, 1);
@@ -49,7 +48,8 @@ public class GameScreen extends ScreenAdapter {
         CollisionSystem collisionSystem = new CollisionSystem(4);
         PositionSystem positionSystem= new PositionSystem(5);
         RenderSystem renderSystem = new RenderSystem(batch, camera, 6);
-        DebugRenderSystem debugRenderSystem = new DebugRenderSystem(batch, camera, 7);
+        CollisionRenderSystem collisionRenderSystem= new CollisionRenderSystem(camera, 7);
+        DebugRenderSystem debugRenderSystem = new DebugRenderSystem(batch, camera, 8);
 
         engine.addSystem(playerSystem);
         engine.addSystem(cameraSystem);
@@ -58,9 +58,10 @@ public class GameScreen extends ScreenAdapter {
         engine.addSystem(collisionSystem);
         engine.addSystem(positionSystem);
         engine.addSystem(renderSystem);
+//        engine.addSystem(collisionRenderSystem);
         engine.addSystem(debugRenderSystem);
 
-        world = new GameWorld(engine, camera);
+        world = new GameWorld(engine);
     }
 
     @Override
